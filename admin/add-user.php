@@ -23,7 +23,8 @@ if(isset($_POST['save'])){
                             VALUES('{$fname}','{$lname}','{$user}','{$password}','{$role}')";
 
         if(mysqli_query($conn,$sql1)){
-            header("Location: {$hostname}/admin/users.php");
+           header("Location: {$hostname}/admin/users.php");
+        
         }
     }
 }
@@ -71,4 +72,3 @@ if(isset($_POST['save'])){
            </div>
        </div>
    </div>
-<?php include "footer.php"; ?>
